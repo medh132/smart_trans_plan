@@ -1,0 +1,152 @@
+{
+  "accessibility": {
+    "features": [
+      "hospital",
+      "college",
+      "school",
+      "station",
+      "park",
+      "cinema"
+    ],
+    "weights": {
+      "hospital": 0.041249265872500496,
+      "college": 0.1639892337877613,
+      "school": 0.15969562748713836,
+      "station": 0.24723439882988613,
+      "park": 0.17813631322528067,
+      "cinema": 0.20969516079743303
+    },
+    "loadings": {
+      "hospital": 0.09440251219679667,
+      "college": 0.3753035433562259,
+      "school": 0.3654772540250255,
+      "station": 0.5658173026193349,
+      "park": 0.4076803580922142,
+      "cinema": 0.4799055099786897
+    },
+    "pc1_explained_variance_ratio": 0.2663138242692131,
+    "bootstrap": {
+      "mean": {
+        "hospital": 0.04141695927764538,
+        "college": 0.16786883021882615,
+        "school": 0.15865716091281276,
+        "station": 0.24600971220785836,
+        "park": 0.17642153970370875,
+        "cinema": 0.20962579767914868
+      },
+      "std": {
+        "hospital": 0.014845927036063345,
+        "college": 0.04706597208736475,
+        "school": 0.017176593714935153,
+        "station": 0.019264181553808872,
+        "park": 0.025338242836834703,
+        "cinema": 0.030193220982846873
+      },
+      "ci_low": {
+        "hospital": 0.017210432158323432,
+        "college": 0.09219201641405671,
+        "school": 0.12691757779471902,
+        "station": 0.21018858053857822,
+        "park": 0.12761122258906044,
+        "cinema": 0.1519548608626927
+      },
+      "ci_high": {
+        "hospital": 0.07733815253158063,
+        "college": 0.2753770272566894,
+        "school": 0.19346967402754206,
+        "station": 0.28499903350397976,
+        "park": 0.22682792348148872,
+        "cinema": 0.2721494348277259
+      },
+      "n_iterations": 1000
+    }
+  },
+  "tod": {
+    "features": [
+      "k_avg",
+      "streets_per_node_avg",
+      "edge_length_avg",
+      "circuity_avg",
+      "residential",
+      "commercial"
+    ],
+    "weights": {
+      "k_avg": 0.2829061206328671,
+      "streets_per_node_avg": 0.22359541553821366,
+      "edge_length_avg": 0.26298324899140796,
+      "circuity_avg": 0.18075032229895482,
+      "residential": 0.015045256872883588,
+      "commercial": 0.03471963566567295
+    },
+    "loadings": {
+      "k_avg": 0.5857213538786257,
+      "streets_per_node_avg": 0.46292603785710174,
+      "edge_length_avg": -0.5444735670690609,
+      "circuity_avg": -0.3742206893725375,
+      "residential": 0.03114930212652772,
+      "commercial": 0.07188261591081324
+    },
+    "pc1_explained_variance_ratio": 0.3545152268933269,
+    "bootstrap": {
+      "mean": {
+        "k_avg": 0.2825276284083775,
+        "streets_per_node_avg": 0.22428430046833467,
+        "edge_length_avg": 0.2611365190770912,
+        "circuity_avg": 0.18063398048195559,
+        "residential": 0.01593053900995611,
+        "commercial": 0.03548703255428374
+      },
+      "std": {
+        "k_avg": 0.020598782840042688,
+        "streets_per_node_avg": 0.023052917288121564,
+        "edge_length_avg": 0.021063213985427095,
+        "circuity_avg": 0.04107215211586744,
+        "residential": 0.009715183432020082,
+        "commercial": 0.008845553892036192
+      },
+      "ci_low": {
+        "k_avg": 0.23609247120575305,
+        "streets_per_node_avg": 0.17750729409013255,
+        "edge_length_avg": 0.22249495712806422,
+        "circuity_avg": 0.11064486803284654,
+        "residential": 0.0009552533427494265,
+        "commercial": 0.021290058914724005
+      },
+      "ci_high": {
+        "k_avg": 0.31963956883624944,
+        "streets_per_node_avg": 0.2682257512755146,
+        "edge_length_avg": 0.304495930918555,
+        "circuity_avg": 0.2748190958777859,
+        "residential": 0.037321913966998466,
+        "commercial": 0.054872281713873025
+      },
+      "n_iterations": 1000
+    }
+  },
+  "config": {
+    "accessibility_features": [
+      "hospital",
+      "college",
+      "school",
+      "station",
+      "park",
+      "cinema"
+    ],
+    "tod_features": [
+      "k_avg",
+      "streets_per_node_avg",
+      "edge_length_avg",
+      "circuity_avg",
+      "residential",
+      "commercial"
+    ],
+    "tod_inverse_features": [
+      "edge_length_avg",
+      "circuity_avg"
+    ],
+    "access_anchor": "station",
+    "tod_anchor": "k_avg",
+    "n_bootstrap": 1000,
+    "random_seed": 42
+  }
+}
